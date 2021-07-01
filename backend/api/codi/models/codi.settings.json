@@ -24,13 +24,13 @@
       "required": false,
       "pluginOptions": {}
     },
-    "Top": {
+    "top": {
       "type": "text"
     },
-    "Bottom": {
+    "bottom": {
       "type": "text"
     },
-    "Shoes": {
+    "shoes": {
       "type": "text"
     },
     "rating": {
