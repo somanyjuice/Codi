@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "codis",
+  "info": {
+    "name": "Codi",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Top": {
+      "type": "text"
+    },
+    "Bottom": {
+      "type": "text"
+    },
+    "Shoes": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "codis"
+    }
+  }
+}
